@@ -1,2 +1,2 @@
-# What is this?
-Discord bot with all equipdex from the game [Guns Girl - Houkai Gakuen](https://houkai2nd.fandom.com/wiki/Houkai_Gakuen_2_Wiki) translated to English. Designed specifically for [Foxgirl and Catgirl guilds discord servers](https://discord.gg/6thCMjFHFR).
+# Teri-teri
+Discord bot with all equipdex from the game [Guns Girl - Houkai Gakuen](https://houkai2nd.fandom.com/wiki/Houkai_Gakuen_2_Wiki) translated to English
