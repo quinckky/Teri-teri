@@ -55,7 +55,7 @@ async def equipdex(interaction: discord.Interaction, query: str):
             'Energy' : '🔯',
             'Light' : '⚡',
             'Poison' : '☠️',
-            None : '\b'
+            None : ''
         }
         
         item = items[0]
