@@ -45,6 +45,3 @@ env.bak/
 
 #Local environments
 .env
-
-#Selenium webdriver
-geckodriver.log
