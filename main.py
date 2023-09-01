@@ -44,7 +44,7 @@ async def equipdex(interaction: discord.Interaction, query: str):
         
         response = '\n'.join(f'`- {title} [ID: {id_}] {rarity}⭐`' for title, id_, rarity in zip(titles, ids, rarities))
         
-        await interaction.response.send_message(f'**✅ Multiple items found {hint}:**\n{response}\n***please use **`/eq [ID]`** to select a specific item***')
+        await interaction.response.send_message(f'**✅ Multiple items found {hint}:**\n{response}\n***please use **`/get [ID]`** to select a specific item***')
         
     else:
         
