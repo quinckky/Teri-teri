@@ -36,7 +36,7 @@ async def equipdex(interaction: discord.Interaction, query: str):
         await interaction.response.send_message(f'**❌ Nothing found for** `{query}`')
         
     elif len(items) > 1:
-        hint = '(The first 20 are displayed)' if len(items) > 20 else '\b'
+        hint = ' (The first 20 are displayed)' if len(items) > 20 else ''
         items = items[:20]
         titles = [item.title for item in items]
         ids = [item.item_id for item in items]
@@ -44,7 +44,7 @@ async def equipdex(interaction: discord.Interaction, query: str):
         
         response = '\n'.join(f'`- {title} [ID: {id_}] {rarity}⭐`' for title, id_, rarity in zip(titles, ids, rarities))
         
-        await interaction.response.send_message(f'**✅ Multiple items found {hint}:**\n{response}\n***please use **`/get [ID]`** to select a specific item***')
+        await interaction.response.send_message(f'**✅ Multiple items found{hint}:**\n{response}\n***please use **`/get [ID]`** to select a specific item***')
         
     else:
         
