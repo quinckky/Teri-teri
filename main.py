@@ -25,7 +25,7 @@ async def on_ready():
 @app_commands.describe(query='Name or ID of an equipment')
 async def equipdex(interaction: discord.Interaction, query: str):
     
-    if interaction.channel_id not in [1147307424525590538, 1139261444353966131, 1009530969394532445]:
+    if interaction.channel_id not in [1147307424525590538, 1139261444353966131, 1009530969394532445, 1046188154274709598]:
         await interaction.response.send_message('You can\'t use bot commands here, use #equipdex instead', ephemeral=True)
         return
     
