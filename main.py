@@ -26,6 +26,7 @@ async def on_ready():
 async def equipdex(interaction: discord.Interaction, query: str):
     
     if interaction.channel_id not in [1147307424525590538, 1139261444353966131, 1009530969394532445]:
+        await interaction.response.send_message('You can\'t use bot commands here, use #equipdex instead', ephemeral=True)
         return
     
     session = Session()
