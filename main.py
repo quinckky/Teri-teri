@@ -25,6 +25,9 @@ async def on_ready():
 @app_commands.describe(query='Name or ID of an equipment')
 async def equipdex(interaction: discord.Interaction, query: str):
     
+    if interaction.channel_id not in [1147307424525590538, 1139261444353966131, 1009530969394532445]:
+        return
+    
     session = Session()
     
     if re.match(r'^[1-9]\d*$', query):
