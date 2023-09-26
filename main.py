@@ -10,7 +10,7 @@ from db import Item, Session
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
-WHITELIST = [int(id_) for id_ in os.getenv('CHANNELS_WHITELIST').split(' ')]
+WHITELIST = [int(id_) for id_ in os.getenv('CHANNELS_WHITELIST').split(',')]
 
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
