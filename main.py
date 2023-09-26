@@ -10,6 +10,7 @@ from db import Item, Session
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
+WHITELIST = [int(id_) for id_ in os.getenv('CHANNELS_WHITELIST').split(' ')]
 
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
@@ -25,8 +26,8 @@ async def on_ready():
 @app_commands.describe(query='Name or ID of an equipment')
 async def equipdex(interaction: discord.Interaction, query: str):
     
-    if interaction.channel_id not in [1147307424525590538, 1139261444353966131, 1009530969394532445, 1046188154274709598]:
-        await interaction.response.send_message('You can\'t use bot commands here, use #equipdex instead', ephemeral=True)
+    if interaction.channel_id not in WHITELIST:
+        await interaction.response.send_message('You can\'t use bot commands here', ephemeral=True)
         return
     
     session = Session()
