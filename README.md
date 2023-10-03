@@ -13,4 +13,4 @@ Data extracting: [AssetStudio](https://github.com/Perfare/AssetStudio)
 
 Data parsing: [hg2-data-item-parser](https://github.com/quinckky/hg2-data-item-parser)
 
-Translation (Still in process): Sachimi, HaXX0r Bunny, quinckky 
+Translation (Still in process): Sachimi, quinckky 
