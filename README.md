@@ -1,5 +1,5 @@
 # Teri-teri
-Discord bot with all equipdex from the game [Guns Girl - Houkai Gakuen 2](https://houkai2nd.fandom.com/wiki/Houkai_Gakuen_2_Wiki) translated to English
+Discord bot with all equipdex from the game [Guns Girl - Houkai Gakuen 2](https://houkai2nd.miraheze.org/wiki/Houkai_Gakuen_2_Wiki) translated to English
 
 # Usage
 1. Invite [bot](https://discord.com/api/oauth2/authorize?client_id=1129137205013655622&permissions=8&scope=bot) to your discord server
